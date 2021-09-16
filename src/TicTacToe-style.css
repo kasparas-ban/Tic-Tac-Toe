@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root {
+  --black: #000000;
+  --dark-blue: #14213D;
+  --yellow: #FCA311;
+  --gray: #E5E5E5;
+  --light-blue: #213663;
+  --white: #FFFFFF;
+}
+
+* {
+  font-family: 'Fredoka One', cursive;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--dark-blue);;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Status */
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 48px;
+}
+
+/* Board */
+
+.board-container {
+  display: grid;
+  justify-content: center;
+}
+
+.board-row {
+  font-size: 0;
+}
+
+.square {
+  font-size: 40px;
+  background-color: var(--light-blue);
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  margin: 2px;
+  width: 80px;
+  height: 80px;
+}
+
+.square:not(.selected):hover {
+  cursor: pointer;
+  background-color: var(--yellow);
+}
+
+.selected {
+  background-color: var(--dark-blue);
+}
+
+.selected:hover {
+  cursor: default;
+}
+
+.highlight {
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+/* History */
+
+.game-info ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.history-btn {
+  font-size: 20px;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 1px;
+}
+
+.history-btn:hover {
+  background: var(--dark-blue);
+  border: 2px solid var(--light-blue);
+}
+
+/* Button panel */
+
+.bot-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.restart {
+  font-size: 20px;
+  background: var(--light-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  border: 2px solid var(--dark-blue);
+}
+
+.restart:hover {
+  background: var(--dark-blue);
+  border: 2px solid var(--light-blue);
+}
