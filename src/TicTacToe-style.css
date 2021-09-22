@@ -81,11 +81,17 @@ button {
 
 /* History */
 
-.game-info ol {
+.game-info ol, .game-info {
+  /* background-color: aqua; */
+  align-items: center;
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: center;
+}
+
+.game-info > div {
+  padding-right: 5px;
 }
 
 .history-btn {

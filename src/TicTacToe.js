@@ -143,6 +143,7 @@ const TicTacToe = () => {
         onClick={(i) => handleClick(i)}
       />
       <div className="game-info">
+        <div>Steps:</div>
         <ol>{moves}</ol>
       </div>
       <div className="bot-panel">
